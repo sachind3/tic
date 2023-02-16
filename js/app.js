@@ -2,26 +2,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const screen1 = document.getElementById("screen-1");
   const screen2 = document.getElementById("screen-2");
   const screen3 = document.getElementById("screen-3");
+  const startBtn = document.getElementById("startBtn");
+  const music = document.getElementById("music");
   const correctMove = document.getElementById("correctMove");
-  const box = document.getElementById("box");
-  const cells = document.querySelectorAll(".cell");
   const reset = document.getElementById("reset");
-  setTimeout(() => {
-    screen1.classList.add("show");
+  screen1.classList.add("show");
+  startBtn.addEventListener("click", () => {
+    screen1.classList.remove("show");
     setTimeout(() => {
-      screen1.classList.remove("show");
-      setTimeout(() => {
-        screen2.classList.add("show");
-      }, 500);
-    }, 5000);
-  }, 500);
-
-  cells.forEach((cell) => {
-    cell.addEventListener("click", () => {
-      alert("Please find a correct position for the Win.");
-    });
+      screen2.classList.add("show");
+    }, 500);
+    music.play();
   });
-
   correctMove.addEventListener("click", () => {
     box.classList.add("correct");
     setTimeout(() => {
