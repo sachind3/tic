@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Siglyn | Choose your winning move</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script>
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+        window.addEventListener("resize", () => {
+          let vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty("--vh", `${vh}px`);
+        });
+      </script>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="screen screen-1" id="screen-1">
+            <div class="flImg floating1">
+                <img src="images/floating1.png" alt="">
+            </div>
+            <div class="flImg floating2">
+                <img src="images/floating2.png" alt="">
+            </div>
+            <div class="flImg floating3">
+                <img src="images/floating3.png" alt="">
+            </div>
+            <div class="flImg floating4">
+                <img src="images/floating4.png" alt="">
+            </div>
+            <div class="flImg floating5">
+                <img src="images/floating5.png" alt="">
+            </div>
+            <div class="title1">
+                <img src="images/title1.png" alt="">
+            </div>
+        </div>
+        <div class="screen screen-2" id="screen-2">
+            <div class="title2">
+                <img src="images/title2.png" alt="">
+            </div>
+            <div class="indication1">
+                <img src="images/indication1.png" alt="">
+            </div>
+            <div class="indication2">
+                <img src="images/indication2.png" alt="">
+            </div>
+            <div class="box" id="box">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div id="correctMove"></div>
+            </div>
+        </div>
+        <div class="screen screen-3" id="screen-3">
+            <div class="thankyou">
+                <img src="images/thankyou.png" alt="">
+                <div class="reset" id="reset"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
