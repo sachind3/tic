@@ -56,8 +56,8 @@ img {
     animation: shake-animation 10s ease infinite;
 }
 .floating1 {
-    left: 105px;
-    top: 175px;
+    left: 65px;
+    top: 145px;
     animation-delay: 0.2s;
 }
 .floating2 {

@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const clickUi = document.getElementById("clickUi");
   const music = document.getElementById("music");
   const pencil = document.getElementById("pencil");
-  const clap = document.getElementById("clap");
+  // const clap = document.getElementById("clap");
   const correctMove = document.getElementById("correctMove");
   const reset = document.getElementById("reset");
   screen1.classList.add("show");
@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     box.classList.add("correct");
     setTimeout(() => {
       screen3.classList.add("show");
-      clap.play();
+      // clap.play();
     }, 1000);
   });
   reset.addEventListener("click", () => {
