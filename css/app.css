@@ -162,7 +162,7 @@ img {
     text-transform: uppercase;
     cursor: pointer; 
  }
- #music {
+ #clickUi, #music, #pencil, #clap {
     opacity: 0;
     position: absolute;
     left: -99999;
